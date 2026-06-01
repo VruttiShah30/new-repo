@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: rgb(37, 37, 85);
+    color: white;
+    display: flex;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+.hero-div{
+    height: 700px;
+    background-image: url(Images/header-1.jpg);
+    background-size: cover;
+}
+.nav{
+    padding: 0px 100px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    
+    
+    
+}
+.nav-item{
+    padding: 0px 20px;
+}
+.nav-item a{
+    color:  rgb(37, 37, 85);
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav-item button{
+    background-color: transparent;
+    border: 2px solid  rgb(37, 37, 85);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#nav-item-end{
+    margin-left: auto;
+}
+.head-text{
+    padding: 150px 100px;
+}
+.head-text h1{
+    font-size: 3em;
+    font-weight: bolder;
+    color: rgb(37, 37, 85);
+   
+}
+.head-text p{
+     margin :30px 0px;
+    font-size: 1.5em;
+    color: rgb(37, 37, 85);
+    line-height: 20px;
+}
+.head-text .btn1{
+    background-color: rgb(37, 37, 85);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+.head-text .btn2{
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+/* ========================About css=================================== */
+.about-div{
+   background-color: white;
+    padding: 0px 100px;
+}
+.welcome-div{
+    
+    margin : 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.welcome-div h2{
+    color:  rgb(37, 37, 85);
+    font-size: 2em;
+    font-weight: bolder;
+}
+.welcome-div p{
+   
+    font-size: 1em;
+    color: rgb(82, 79, 79);
+}
+.welcome-div .blue-line{
+    width: 100px;
+    height: 3px;
+    background-color:   rgb(37, 37, 85);
+}
+.task-div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.task-col{
+     padding: 10px;
+}
+.task-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(206, 199, 199);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.task-img i{
+    font-size: 1.5em;
+    margin: auto;
+}
+.task-text{
+    text-align: center;
+}
+.task-text h3{
+    color:  rgb(37, 37, 85);
+}
+.task-text p{
+    color:  rgb(82, 79, 79);;
+}
+.about-video{
+   margin-top: 100px;
+}
+.about-video video{
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px;
+}
+.about-team{
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+     
+}
+.about-team i,h3{
+    color:rgb(37, 37, 85) ;
+    font-size: 1.5em;
+    text-transform: capitalize;
+   
+}
+.about-team p{
+     color:  rgb(82, 79, 79);
+
+}
+.team-head .head{
+    display: flex;
+    gap: 20px;
+}
+/* ========================================Footer======== */
+.footer-div{
+    margin-top: 100px;
+    background-color: rgb(54, 54, 85);
+    padding: 100px;
+    display: flex;
+    gap: 100px;
+}
+.footer-form{
+    background-color:rgb(37, 37, 85) ;
+    padding: 50px;
+    color: white;
+    border-radius: 20px;
+    width: 50%;
+    
+
+}
+.footer-form h2{
+    font-size: bolder;
+}
+.footer-div form{
+    margin-top: 50px ;
+    
+}
+.footer-div form input,button{
+    padding: 10px 30px;
+}
+.footer-div form button{
+    background-color: yellow;
+    border: none;
+}
+.footer-content{
+    display: flex;
+    gap: 100px;
+    
+}
+.footer-content li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.footer-content a{
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+   text-decoration: none;
+}
+.footer-content li> button{
+    background-color:rgb(37, 37, 85) ;
+    border: none;
+    padding: 10px;
+    margin: 0px 20px;
+}
+.footer-content li i{
+    color: white;
+}
+.foot-info{
+    background-color:rgb(37, 37, 85) ;
+    color: white;
+    padding: 30px 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}

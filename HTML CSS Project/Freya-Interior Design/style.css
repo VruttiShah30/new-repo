@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+    font-size: 6em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family:
+}
+
+h6{
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 100;
+    color: rgb(200, 198, 198);
+}
+
+/* =====================================================hero-div=============================================================== */
+.hero-div{
+    background-image: url(header_1.jpg);
+    height: 1100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position:; */
+    position: absolute;
+    top: 0;
+}
+
+/* ============================================= Navbar ================================================================ */
+.navbar{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(82, 81, 81);
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    gap:50px;
+    height: 70px;
+    margin:30px 300px;
+    padding: 15px 50px;
+    width: 70%;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    font-size: 1;
+    z-index: 1;
+}
+
+.social{
+    margin-left: auto; 
+}
+
+#btn button{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 0px 15px;
+    font-size: larger;
+}
+.nav-item a{
+    font-weight: bolder;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(119, 118, 118);
+    gap: 5px;
+}
+/* ======================================================== Nav-footer ================================================== */
+.footer{
+    padding:900px 300px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: transparent;
+}
+.foot-para p{
+    font-size: 1.5em;
+}
+.foot-para h3{
+        font-size: 3.5em;
+    }
+.footer-btn button{
+    background-color: rgba(0,0,0,0.5);
+    width: 300px;
+    color: white;
+    padding: 20px;
+    border: 2px solid white;
+}
+.section p{
+    padding: 200px 700px;
+    color: black;
+    font-size: 3em;
+}
+.about-para{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.para1{
+    font-size: 3em;
+    text-align: center;
+    color: rgb(71, 70, 70);
+}
+.para2{
+    margin: 50px;
+    font-size: 1.5em;
+    color: rgb(71, 70, 70);
+}
+/* =============================================Services============================================================= */
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding:30px 250px;
+}
+.service-card img{
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    display: block;
+    text-align: center;
+}
+.service-card h3{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    color: rgb(71, 70, 70);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.service-card p{
+    text-align: center ;
+    font-size: 1.5em;
+    font-weight:lighter;
+    color: rgb(71, 70, 70);
+    line-height: 1.8;
+    letter-spacing: 2px;
+}
+/* ===================================================banner1======================================================================= */
+.hero-banner1{
+    margin: 100px 0px;
+    background-image: url(banner_1.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    height: 600px;
+}
+.banner-text1{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* .banner-text1 h5{
+    font-size: 6em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 
+}
+.banner-text1 h6{
+    font-size: 3em;
+    font-weight: 100;
+    color: rgb(200, 198, 198);
+} */
+/* ======================================================coffee-para================================================================== */
+.coffee-shop{
+    margin-top: 200px;
+    text-align: center;
+}
+.coffee-head h4{
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+}
+.coffee-para p{
+    padding: 50px 500px;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+/* =========================================================grid-image=========================================================== */
+.grid-image{
+        padding: 30px 300px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: 800px;
+
+}
+.grid-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#img3{
+    grid-column: 1 / span 2;
+}
+/* ====================================================banner2==================================================================== */
+.hero-banner2{
+    margin: 100px 0px;
+    background-image: url(banner_2.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    height: 600px;
+}
+.banner-text2{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* .banner-text2 h5{
+    font-size: 5em;
+    font-weight: 500;
+}
+.banner-text2 h6{
+    font-size: 3em;
+    font-weight: 500;
+} */
+
+/* ==========================================================Brooklyn ======================================================= */
+
+.Brooklyn{
+    margin-top: 200px;
+    text-align: center;
+}
+.Brooklyn-head h4{
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+}
+.Brooklyn-para p{
+    padding: 50px 500px;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+/* ===============================================================desk-image grid =======================================================*/
+
+.desk-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 450px;
+    padding: 30px 350px;
+    gap: 40px;
+}
+.desk-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#deskimg-1{
+    grid-column: 1 / span 2;
+}
+
+/* ===========================================================hero-banner-3 ==============================================================*/
+
+.hero-banner3{
+    margin: 100px 0px;
+    background-image: url(banner_3.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    height: 600px;
+}
+.banner-text3{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+/* .banner-text3 h5{
+    font-size: 5em;
+    font-weight: 500;
+}
+.banner-text3 h6{
+    font-size: 3em;
+    font-weight: 500;
+} */
+
+/* ============================================================ Prestana para ========================================================= */
+
+.Prestana{
+    margin-top: 200px;
+    text-align: center;
+}
+.Prestana-head h4{
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+}
+.Prestana-para p{
+    padding: 50px 500px;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+/* ========================================================================room image=========================================== */
+
+.room-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 450px;
+    padding: 30px 350px;
+    gap: 40px;
+}
+.room-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ============================================================= hero banner-4================================================= */
+
+.hero-banner4{
+    margin: 100px 0px;
+    background-image: url(banner_1.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:cover;
+    height: 600px;
+}
+.banner-text4{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+/* ===============================================================Luxurious  para ================================================= */
+
+.Luxurious{
+    margin-top: 200px;
+    text-align: center;
+}
+.Luxurious-head h4{
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+}
+.Luxurious-para p{
+    padding: 50px 500px;
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+/* ====================================================kitchen image grid ============================================= */
+
+.kitchen-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-auto-rows: 450px;
+    padding: 30px 350px;
+    gap: 40px;
+}
+.kitchen-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#kitchen-1{
+    grid-column: 1 / span 2;
+}
+#kitchen-4{
+    grid-column: 1 / span 2;
+}
+
+/* ===============================================footer-social-media-symbol=================================================== */
+
+.foot-social{
+    margin-top: 100px;
+    height: 100px;
+    background-color: rgb(220, 219, 219);
+    color: rgb(74, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    gap: 20px;
+}
+.foot-address{
+    background-color: rgb(7, 7, 28);
+    height: 200px;
+    color: rgb(235, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    line-height: 50px;
+    letter-spacing: 2px;
+    
+}
+#para-address1{
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+#para-address2{
+    color: gray;
+    font-size: 1em;
+}
+#para-address2 a{
+    color:gray;
+    text-decoration: none;
+}

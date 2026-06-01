@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiter of products</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 30px; 
+            justify-content: center;
+            margin: 20px;
+        }
+        .main button{
+            font-size: 1.5em;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button onclick="filterProduct('Fruits')">Fruits</button>
+        <button onclick="filterProduct('vegetables')">Vegetables</button>
+        <button onclick="filterProduct('bevarages')">Bevarages</button>
+    </div>
+
+    <table align="center" border="1" cellscaping="10px" cellpadding="5px">
+        <thead>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Refrence Image</th>
+        </thead>
+        <tbody id="productData">
+        
+        </tbody>
+    </table>
+
+
+    <script>
+        let products = [
+            {
+                Name : "Apple",
+                CategoryName : "Fruits",
+                Price : "200/-",
+                Description : "Red colour",
+                ReferenceImage : "Images/fruits/apple.jpg"
+            },
+            {
+                Name : "Banana",
+                CategoryName : "Fruits",
+                Price : "120/-",
+                Description : "Yellow colour",
+                ReferenceImage : "Images/fruits/banana.jpg"
+            },
+            {
+                Name : "Chiku",
+                CategoryName : "Fruits",
+                Price : "250/-",
+                Description : "brown colour",
+                ReferenceImage : "Images/fruits/chiku.jpg"
+            },
+            {
+                Name : "soft-drink",
+                CategoryName : "bevarages",
+                Price : "80/-",
+                Description : "diffent colour",
+                ReferenceImage : "Images/bevarages/soft-drink.jpg"
+            },
+            {
+                Name : "guava",
+                CategoryName : "Fruits",
+                Price : "180/-",
+                Description : "green colour",
+                ReferenceImage : "Images/fruits/guava.png"
+            },
+            {
+                Name : "tomato",
+                CategoryName : "vegetables",
+                Price : "150/-",
+                Description : "red colour",
+                ReferenceImage : "Images/vegetables/tomato.jpg"
+            },
+            {
+                Name : "potato",
+                CategoryName : "vegetables",
+                Price : "100/-",
+                Description : "cream colour",
+                ReferenceImage : "Images/vegetables/potato.png"
+            },
+            {
+                Name : "brinjal",
+                CategoryName : "vegetables",
+                Price : "120/-",
+                Description : "purple colour",
+                ReferenceImage : "Images/vegetables/brinjal.jpg"
+            },
+            
+            {
+                Name : "Lady Finger",
+                CategoryName : "vegetables",
+                Price : "110/-",
+                Description : "green colour",
+                ReferenceImage : "Images/vegetables/ladyFinger.jpg"
+            },
+            {
+                Name : "cold-coffee",
+                CategoryName : "bevarages",
+                Price : "180/-",
+                Description : "chocolate colour",
+                ReferenceImage : "Images/bevarages/cold-coffee.jpg"
+            },
+            {
+                Name : "fruit-juice",
+                CategoryName : "bevarages",
+                Price : "100/-",
+                Description : "diffent colour",
+                ReferenceImage : "Images/bevarages/fruit-juice.jpg"
+            },
+            {
+                Name : "onion",
+                CategoryName : "vegetables",
+                Price : "200/-",
+                Description : "offWhite colour",
+                ReferenceImage : "Images/vegetables/onion.jpg"
+            },
+            {
+                Name : "Lady Finger",
+                CategoryName : "vegetables",
+                Price : "110/-",
+                Description : "green colour",
+                ReferenceImage : "Images/vegetables/ladyFinger.jpg"
+            },
+            {
+                Name : "milkshake",
+                CategoryName : "bevarages",
+                Price : "200/-",
+                Description : "diffent colour",
+                ReferenceImage : "Images/bevarages/milkshake.jpg"
+            },
+            {
+                Name : "mocktail",
+                CategoryName : "bevarages",
+                Price : "220/-",
+                Description : "diffent colour",
+                ReferenceImage : "Images/bevarages/mocktail.jpg"
+            },
+            
+
+
+
+        ]
+        
+        console.log(products);
+
+        function printTable(data){
+            let str = "";
+
+            data.forEach((index,i,data) => {
+                str+=`<tr>
+                        <td>${index.Name}</td>
+                        <td>${index.CategoryName}</td>
+                        <td>${index.Price}</td>
+                        <td>${index.Description}</td>
+                        <td><img src="${index.ReferenceImage}" width="50" height="35"></td>
+                    </tr> `
+            });
+
+            document.getElementById("productData").innerHTML = str;
+            
+        }
+        printTable(products);
+
+
+        function filterProduct(Category){
+            let filterArray;
+            if(Category=='all'){
+                filterArray=products;
+
+            }
+            else{
+                filterArray = products.filter((index,i)=>{
+                    if(index.CategoryName==Category){
+                        return index;
+                    }
+                })
+            }
+            printTable(filterArray);
+        }
+    </script>
+</body>
+</html>
